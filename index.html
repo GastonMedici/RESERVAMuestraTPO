@@ -54,177 +54,112 @@
             <img src="img/Mi proyecto Reserva.png" alt="Logo TPO" style="width: 250px; height: 250px;">
 
             <div id="divTitulo">La forma más rápida y sencilla de reservar tu mesa en <br> los mejores restaurantes
-                y vivir una experiencia inolvidable.</div>
+                y vivir una experiencia inolvidable.
+            </div>
 
             <nav class="header-menubar">
             </nav>
         </section>
     </header>
-    <main style="
-                position: relative;
-                background-color: rgba(104, 52, 52, 0.459);
-                height: 500px;
-                border-radius: 10px 10px 0px 0px;
-                ">
-        <center>
-            <blockquote>
-                <p id="encuentraMesa">Encuentra tu mesa ideal</p>
-            </blockquote>
-        </center>
-        <input id="fecha" type="date" name="fecha" value="date()" required>
-        <input id="hora" type="time" name="hora" value="00:00" required>
-        <input type="text" name="personas" id="personas" autocomplete="off" placeholder="Personas" required value="">
-        <select name="lugares" id="lugares" required>
-            <option value="0">Seleccione un lugar</option>
-            <option value="1">Restaurante 1</option>
-            <option value="2">Restaurante 2</option>
-            <option value="3">Restaurante 3</option>
-            <option value="4">Restaurante 4</option>
-            <option value="5">Restaurante 5</option>
-            <option value="6">Restaurante 6</option>
-            <option value="7">Restaurante 7</option>
-            <option value="8">Restaurante 8</option>
-            <option value="9">Restaurante 9</option>
-            <option value="10">Restaurante 10</option>
-        </select>
-        
-        <input type="text" name="nombre" id="nombr" autocomplete="off" required value=""
-            placeholder="Ingrese su Nombre">
-        <input type="text" name="apellido" id="apellid" autocomplete="off" required value=""
-            placeholder="Ingrese su Apellido">
-        <input type="text" name="telefono" id="telefon" autocomplete="off" required value="" placeholder="Teléfono">
-        <input type="text" name="correo" id="corre" autocomplete="off" required value=""
-            placeholder="Correo Electrónico">
+    <main>
+        <div class="contenedor-input">
+            <div>
+                <p class="encuentraMesa">Encuentra tu mesa ideal</p>
+            </div>
+            <div class="areaInput">
+                <input id="fecha" type="date" name="fecha" value="date()" required>
+                <input id="hora" type="time" name="hora" value="00:00" required>
+                <input type="text" name="personas" id="personas" autocomplete="off" placeholder="Personas" required
+                    value="">
+                <select name="lugares" id="lugares" required>
+                    <option value="0">Seleccione un lugar</option>
+                    <option value="1">Restaurante 1</option>
+                    <option value="2">Restaurante 2</option>
+                    <option value="3">Restaurante 3</option>
+                    <option value="4">Restaurante 4</option>
+                    <option value="5">Restaurante 5</option>
+                    <option value="6">Restaurante 6</option>
+                    <option value="7">Restaurante 7</option>
+                    <option value="8">Restaurante 8</option>
+                    <option value="9">Restaurante 9</option>
+                    <option value="10">Restaurante 10</option>
+                </select>
 
-        <button id="reservar" onclick="validarCampos()">R E S E R V A R</button>
-
-
-        <script>
-            function validarCampos() {
-                var input1 = document.getElementById("fecha").value;
-                var input2 = document.getElementById("hora").value;
-                var input3 = document.getElementById("personas").value;
-                var input4 = document.getElementById("lugares").value;
-                var input5 = document.getElementById("nombr").value;
-                var input6 = document.getElementById("apellid").value;
-                var input7 = document.getElementById("telefon").value;
-                var input8 = document.getElementById("corre").value;
-
-                if (input1 == "") {
-                    alert("Ingrese por favor una fecha");
-                    return;
-                }
-                if (input2 == "00:00") {
-                    alert("Ingrese por favor el horario");
-                    return;
-                }
-                if (input3 == "") {
-                    alert("Ingrese por favor una cantidad de personas");
-                    return;
-                }
-                if (input4 == "0") {
-                    alert("Seleccione por favor un lugar a reservar");
-                    return;
-                }
-                if (input5 == "") {
-                    alert("Ingrese su Nombre por favor");
-                    return;
-                }
-                if (input6 == "") {
-                    alert("Ingrese su Apellido por favor");
-                    return;
-                }
-                if (input7 == "") {
-                    alert("Ingrese un Teléfono por favor");
-                    return;
-                }
-                if (input8 == "") {
-                    alert("Ingrese un Correo Electrónico por favor");
-                    return;
-                }
-                // Si la validación es exitosa, llamamos al HTML Reservar
-                window.location.href = 'reservar.html';
-            }
-        </script>
-
-    </main>
-    <main style="
-                border-radius: 0px 0px 10px 10px;
-                height: 600px;
-                ">
-        <!-- <section class="secciones"> -->
-        <section>
-            <center>
-                <blockquote>
-                    <p class="NClientes">Nuestros Principales Clientes</p>
-                </blockquote>
-            </center>
-            <!-- <div class="contenido-ppal"> -->
-
-            <article class="botons" style="
-                    background-image: url(img/ParrillaDonJulio.jpg);
-                    background-position: center center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    ">
-                <a href="https://www.parrilladonjulio.com/"  target="_blank" class="boton">Don Julio</a>
-            </article>
-
-            <article class="botons" style="
-                    background-image: url(img/Chila.jpg);
-                    background-position: center center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    ">
-                <a href="https://www.chilarestaurant.com/" target="_blank" class="boton">Chila</a>
-            </article>
-
-            <article class="botons" style="
-                    background-image: url(img/LasVioletas.jpg);
-                    background-position: center center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    ">
-                <a href="http://www.lasvioletasconfiteria.com/" target="_blank" class="boton">Las Violetas</a>
-            </article>
-        </section>
+                <input type="text" name="nombre" id="nombr" autocomplete="off" required value=""
+                    placeholder="Ingrese su Nombre">
+                <input type="text" name="apellido" id="apellid" autocomplete="off" required value=""
+                    placeholder="Ingrese su Apellido">
+                <input type="text" name="telefono" id="telefon" autocomplete="off" required value=""
+                    placeholder="Teléfono">
+                <input type="text" name="correo" id="corre" autocomplete="off" required value=""
+                    placeholder="Correo Electrónico">
+            </div>
+            <div class="contenedor-boton-reserva">
+                <button id="reservar" onclick="validarCampos()">R E S E R V A R</button>
+            </div>
+            <script src="reserva.js"></script>
         </div>
-        <section class="secciones" style="background-color: rgb(226, 17, 125);">
-        </section>
+        <div class="contenedor-NClientes">
+            <div class="NClientes">
+                <p>Nuestros Principales Clientes</p>
+            </div>
+            <div>
+                <article class="botons" style="background-image: url(img/ParrillaDonJulio.jpg);">
+                    <a href="https://www.parrilladonjulio.com/" target="_blank" class="boton">Don Julio</a>
+                </article>
+
+                <article class="botons" style="background-image: url(img/Chila.jpg);">
+                    <a href="https://www.chilarestaurant.com/" target="_blank" class="boton">Chila</a>
+                </article>
+
+                <article class="botons" style="
+                        background-image: url(img/LasVioletas.jpg);">
+                    <a href="http://www.lasvioletasconfiteria.com/" target="_blank" class="boton">Las Violetas</a>
+                </article>
+            </div>
+        </div>
     </main>
+    <footer>
+        <ul class="listaFooter">
+          <li><a href="index.html" style="color: black">Inicio</a></li>
+          <br />
+          <li><a href="services.html" style="color: black">Servicios</a></li>
+          <br />
+          <li><a href="project.html" style="color: black">Proyecto</a></li>
+          <br />
+          <li><a href="registro.html" style="color: black">Contáctanos</a></li>
+          <br />
+          <li><a href="about.html" style="color: black">Acerca de</a></li>
+          <br />
+        </ul>
+        <img
+          class="imgFooter"
+          src="img/Mi proyecto Reserva.png"
+          alt="Logo TPO"
+          style="width: 200px; height: 200px"
+        />
+        <article>
+          <p><i class="fa-solid fa-envelope fa-lg"></i>reserva@reserva.com.ar</p>
+          <p><i class="fa-solid fa-phone fa-lg"></i>+54 9 4123-5678</p>
+          <p><i class="fa-solid fa-house fa-lg"></i>Buenos Aires, Argentina</p>
+        </article>
+      </footer>
+    
+      <footer class="footerDiv">
+        <a href="https://www.twitter.com/@reservatpo" target="_blank" style="color: black">
+          <i class="fa-brands fa-square-twitter"></i
+        ></a>
+        <a href="https://www.facebook.com/profile.php?id=100093051541131" target="_blank" style="color: black">
+          <i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com" target="_blank" style="color: black">
+          <i class="fa-brands fa-square-instagram"></i></a
+        ><br />
+    
+        <p style="font: small-caption; font: 12px" class="footer-text">
+          © Derechos Reservados @2023.
+        </p>
+      </footer>
 </body>
-<footer>
-    <ul class="listaFooter">
-        <li><a href="index.html" style="color: black;">Inicio</a></li><br>
-        <li><a href="services.html" style="color: black;">Servicios</a></li>
-        <br>
-        <li><a href="project.html" style="color: black;">Proyecto</a></li>
-        <br>
-        <li><a href="registro.html" style="color: black;">Contactanos</a></li>
-        <br>
-        <li><a href="about.html" style="color: black;">Acerca de</a></li>
-        <br>
-    </ul>
-
-    <img class="imgFooter" src="img/Mi proyecto Reserva.png" alt="Logo TPO" style="width: 200px; height: 200px;">
-    <article>
-        <p> <i class="fa-solid fa-envelope fa-lg"></i>reserva@reserva.com.ar</p>
-        <p> <i class="fa-solid fa-phone fa-lg"></i>+54 9 4123-5678</p>
-        <p> <i class="fa-solid fa-house fa-lg"></i>Buenos Aires, Argentina</p>
-    </article>
-
-</footer>
-
-<footer class="footerDiv">
-
-    <a href="https://www.twitter.com/@reservatpo" target="_blank" style="color: black;"> <i
-            class="fa-brands fa-square-twitter"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=100093051541131" target="_blank" style="color: black;"> <i class="fa-brands fa-facebook"></i></a>
-    <a href="https://www.instagram.com" target="_blank" style="color: black;"> <i
-            class="fa-brands fa-square-instagram"></i></a><br>
-
-    <p style="font: small-caption; font: 12px;" class="footer-text">© Derechos Reservados @2023.</p>
-
-</footer>
 
 </html>
